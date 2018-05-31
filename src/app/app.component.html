@@ -1,0 +1,154 @@
+<clr-main-container>
+  <!-- <clr-header>
+    <div class="branding">
+      <a href="#" class="nav-link">
+        <span class="clr-icon clr-clarity-logo"></span>
+        <span class="title">Clarity</span>
+      </a>
+    </div>
+      <div class="header-nav" [clr-nav-level]="1">
+          <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active"><span class="nav-text">Home</span></a>
+          <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active"><span class="nav-text">About</span></a>
+      </div>
+    <div class="header-actions">
+    </div>
+  </clr-header> -->
+  <header class="header-7">
+    <div class="branding">
+        <a href="..." class="nav-link">
+            <clr-icon shape="vm-bug"></clr-icon>
+            <span class="title">Effect.io</span>
+        </a>
+    </div>
+    <form class="search">
+        <label for="search_input">
+            <input id="search_input" type="text" placeholder="Search for keywords...">
+        </label>
+    </form>
+    <div class="header-actions">
+        <a href="..." class="nav-link nav-icon">
+            <clr-icon shape="cog"></clr-icon>
+        </a>
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>  
+    <clr-vertical-nav [clrVerticalNavCollapsible]="demoCollapsible" class="nav-trigger--bottom">
+      <div class="nav-content">
+        <clr-vertical-nav-group
+                routerLinkActive="active">
+            <clr-icon shape="cog" clrVerticalNavIcon></clr-icon>
+            General
+            <clr-vertical-nav-group-children>
+                <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                    General
+                </a>
+                <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                    General
+                </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+        routerLinkActive="">
+          <clr-icon shape="bolt" clrVerticalNavIcon></clr-icon>
+          Themes
+          <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                routerLink=""
+                routerLinkActive="">
+                  Themes
+              </a>
+              <a clrVerticalNavLink
+                routerLink=""
+                routerLinkActive="">
+                  Themes
+              </a>
+          </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
+            Respondents
+            <clr-vertical-nav-group-children>
+                <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                    Respondents
+                </a>
+                <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                    Respondents
+                </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="bar-chart" clrVerticalNavIcon></clr-icon>
+            Statistics
+            <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                  Statistics
+              </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="store" clrVerticalNavIcon></clr-icon>
+            Webshop & Invoices
+            <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                  Webshop
+              </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="list" clrVerticalNavIcon></clr-icon>
+            Reports
+            <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                  Reports
+              </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="envelope" clrVerticalNavIcon></clr-icon>
+            Emails
+            <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                  Emails
+              </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="">
+            <clr-icon shape="users" clrVerticalNavIcon></clr-icon>
+            Customers
+            <clr-vertical-nav-group-children>
+              <a clrVerticalNavLink
+                  routerLink=""
+                  routerLinkActive="">
+                  Customers
+              </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+      </div>
+    </clr-vertical-nav>
+  </div>
+</clr-main-container>

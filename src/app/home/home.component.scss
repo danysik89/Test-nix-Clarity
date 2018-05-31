@@ -1,0 +1,37 @@
+// Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+// This software is released under MIT license.
+// The full license information can be found in LICENSE in the root directory of this project.
+
+.user-info {
+    display: flex;
+    .user-info-photo {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;    
+        img {        
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: transparent;
+            border: none;
+            color: #007cbb;
+            letter-spacing: 1.5px;
+        }
+        button:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+    }
+    .user-info-text {
+        h3 {
+            font-weight: bold;
+            margin-top: 0;
+            font-size: 30px;
+        }
+    }
+}
