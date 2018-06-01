@@ -17,3 +17,13 @@
     letter-spacing: 4px
   }
 }
+
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  background-color: #fff;
+}

@@ -2,36 +2,82 @@
 // This software is released under MIT license.
 // The full license information can be found in LICENSE in the root directory of this project.
 
-.user-info {
-    display: flex;
-    .user-info-photo {
-        width: 200px;
+button {
+    text-transform: none;
+}
+
+.customers-info {
+    background-color: #fafafa;
+    .user-info {
         display: flex;
-        flex-direction: column;
-        margin-right: 50px;    
-        img {        
-            height: 200px;
-            border-radius: 10px;
+        .user-info-photo {            
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;    
+            img {        
+                max-width: 170px;
+                height: auto;
+                border-radius: 10px;
+            }
+    
+            button {
+                margin-top: 15px;
+                background-color: transparent;
+                border: none;
+                color: #1788c1;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+            }
+            button:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+        }
+        .user-info-text {
+            display: flex;
+            flex-direction: column;
+            h3 {
+                font-weight: bold;
+                margin-top: 0;
+                font-size: 30px;
+            }
+            p {
+                margin-top: 0;
+            }
+            .user-email {
+                margin-top: 10px;
+            }
+            button {
+                text-transform: none;
+                width: 250px;
+            }
+        }
+    }
+    .card {
+        margin-top: 0;
+        &-header {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.customers-set {
+    background-color: #fff;
+    width: 100%;
+    ul {
+        padding: 0;
+    }
+    .nav-item {
+        width: 40%;
+        .nav-link {
+            width: 100%;
+            transition: .5s ease;
+            &:hover {
+                font-weight: bold;
+            }
         }
 
-        button {
-            margin-top: 15px;
-            background-color: transparent;
-            border: none;
-            color: #007cbb;
-            letter-spacing: 1.5px;
-        }
-        button:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        
-    }
-    .user-info-text {
-        h3 {
-            font-weight: bold;
-            margin-top: 0;
-            font-size: 30px;
-        }
     }
 }
